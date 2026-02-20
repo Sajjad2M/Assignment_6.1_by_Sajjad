@@ -6,7 +6,7 @@
     "description": "Premium quality breathable cotton t-shirt designed for daily comfort and long-lasting wear.",
     "price": 19,
     "rating": 4.3,
-    "image": "images/men-tshirt.jpg"
+    "image": "Assets/images/men-tshirt.jpg"
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "description": "Stylish slim-fit denim jeans made with stretchable fabric for comfort and durability.",
     "price": 45,
     "rating": 4.5,
-    "image": "images/men-jeans.jpg"
+    "image": "Assets/images/men-jeans.jpg"
   },
   {
     "id": 3,
@@ -24,7 +24,7 @@
     "description": "High-quality leather sneakers with cushioned sole and modern design.",
     "price": 75,
     "rating": 4.6,
-    "image": "images/men-sneakers.jpg"
+    "image": "Assets/images/men-sneakers.jpg"
   },
   {
     "id": 4,
@@ -33,7 +33,7 @@
     "description": "Lightweight floral summer dress crafted from soft fabric.",
     "price": 55,
     "rating": 4.7,
-    "image": "images/women-dress.jpg"
+    "image": "Assets/images/floral summer dress_.jpg"
   },
   {
     "id": 5,
@@ -42,7 +42,7 @@
     "description": "Stylish high heels designed with premium materials for comfort and elegance.",
     "price": 65,
     "rating": 4.4,
-    "image": "images/women-heels.jpg"
+    "image": "Assets/images/women-heels.jpg"
   },
   {
     "id": 6,
@@ -51,7 +51,7 @@
     "description": "Spacious and fashionable handbag with durable stitching.",
     "price": 70,
     "rating": 4.6,
-    "image": "images/women-handbag.jpg"
+    "image": "Assets/images/handbag_women.jpg"
   },
   {
     "id": 7,
@@ -60,13 +60,13 @@
     "description": "Beautiful gold-plated necklace set crafted with intricate detailing.",
     "price": 120,
     "rating": 4.8,
-    "image": "images/necklace.jpg"
+    "image": "Assets/images/necklace.jpg"
   },
   {
     "id": 8,
     "category": "jewelry",
     "title": "Silver Minimalist Bracelet",
-    "description": "Elegant silver bracelet with minimalist design.",
+    "description": "Assets/images/bracelet.jpg",
     "price": 35,
     "rating": 4.2,
     "image": "images/bracelet.jpg"
@@ -78,7 +78,7 @@
     "description": "Premium diamond stud earrings with sparkling finish.",
     "price": 250,
     "rating": 4.9,
-    "image": "images/earrings.jpg"
+    "image": "Assets/images/Diamond Earrings.jpg"
   },
   {
     "id": 10,
@@ -87,7 +87,7 @@
     "description": "Durable travel backpack with multiple compartments and USB charging port.",
     "price": 60,
     "rating": 4.5,
-    "image": "images/backpack.jpg"
+    "image": "Assets/images/Travel Backpack.jpg"
   },
   {
     "id": 11,
@@ -96,7 +96,7 @@
     "description": "Premium leather office bag designed for professionals.",
     "price": 130,
     "rating": 4.7,
-    "image": "images/office-bag.jpg"
+    "image": "Assets/images/office-bag.jpg"
   },
   {
     "id": 12,
@@ -105,7 +105,7 @@
     "description": "Compact and stylish sling bag perfect for daily use.",
     "price": 28,
     "rating": 4.3,
-    "image": "images/sling-bag.jpg"
+    "image": "Assets/images/sling-bag.jpg"
   },
   {
     "id": 13,
@@ -114,7 +114,7 @@
     "description": "Soft and colorful cartoon printed t-shirt for kids.",
     "price": 15,
     "rating": 4.4,
-    "image": "images/kids-tshirt.jpg"
+    "image": "Assets/images/kids_tshirt.jpg"
   },
   {
     "id": 14,
@@ -123,7 +123,7 @@
     "description": "Durable and lightweight school backpack with fun design.",
     "price": 25,
     "rating": 4.5,
-    "image": "images/kids-backpack.jpg"
+    "image": "Assets/images/kids_backpack.jpg"
   },
   {
     "id": 15,
@@ -132,7 +132,7 @@
     "description": "Comfortable and flexible sports shoes designed for active kids.",
     "price": 40,
     "rating": 4.6,
-    "image": "images/kids-shoes.jpg"
+    "image": "Assets/images/kid_shoe.jpg"
   },
   {
     "id": 16,
@@ -141,6 +141,6 @@
     "description": "Premium warm wool coat designed for cold weather.",
     "price": 110,
     "rating": 4.8,
-    "image": "images/women-coat.jpg"
+    "image": "Assets/images/women_coat.jpg"
   }
 ]
