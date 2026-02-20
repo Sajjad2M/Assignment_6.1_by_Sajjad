@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "category": "men",
+    "title": "Men's Classic Cotton T-Shirt",
+    "description": "Premium quality breathable cotton t-shirt designed for daily comfort and long-lasting wear.",
+    "price": 19,
+    "rating": 4.3,
+    "image": "images/men-tshirt.jpg"
+  },
+  {
+    "id": 2,
+    "category": "men",
+    "title": "Men's Slim Fit Denim Jeans",
+    "description": "Stylish slim-fit denim jeans made with stretchable fabric for comfort and durability.",
+    "price": 45,
+    "rating": 4.5,
+    "image": "images/men-jeans.jpg"
+  },
+  {
+    "id": 3,
+    "category": "men",
+    "title": "Men's Leather Casual Sneakers",
+    "description": "High-quality leather sneakers with cushioned sole and modern design.",
+    "price": 75,
+    "rating": 4.6,
+    "image": "images/men-sneakers.jpg"
+  },
+  {
+    "id": 4,
+    "category": "women",
+    "title": "Women's Floral Summer Dress",
+    "description": "Lightweight floral summer dress crafted from soft fabric.",
+    "price": 55,
+    "rating": 4.7,
+    "image": "images/women-dress.jpg"
+  },
+  {
+    "id": 5,
+    "category": "women",
+    "title": "Women's Elegant Party Heels",
+    "description": "Stylish high heels designed with premium materials for comfort and elegance.",
+    "price": 65,
+    "rating": 4.4,
+    "image": "images/women-heels.jpg"
+  },
+  {
+    "id": 6,
+    "category": "women",
+    "title": "Women's Premium Handbag",
+    "description": "Spacious and fashionable handbag with durable stitching.",
+    "price": 70,
+    "rating": 4.6,
+    "image": "images/women-handbag.jpg"
+  },
+  {
+    "id": 7,
+    "category": "jewelry",
+    "title": "Gold Plated Necklace Set",
+    "description": "Beautiful gold-plated necklace set crafted with intricate detailing.",
+    "price": 120,
+    "rating": 4.8,
+    "image": "images/necklace.jpg"
+  },
+  {
+    "id": 8,
+    "category": "jewelry",
+    "title": "Silver Minimalist Bracelet",
+    "description": "Elegant silver bracelet with minimalist design.",
+    "price": 35,
+    "rating": 4.2,
+    "image": "images/bracelet.jpg"
+  },
+  {
+    "id": 9,
+    "category": "jewelry",
+    "title": "Diamond Stud Earrings",
+    "description": "Premium diamond stud earrings with sparkling finish.",
+    "price": 250,
+    "rating": 4.9,
+    "image": "images/earrings.jpg"
+  },
+  {
+    "id": 10,
+    "category": "bags",
+    "title": "Travel Backpack with USB Port",
+    "description": "Durable travel backpack with multiple compartments and USB charging port.",
+    "price": 60,
+    "rating": 4.5,
+    "image": "images/backpack.jpg"
+  },
+  {
+    "id": 11,
+    "category": "bags",
+    "title": "Luxury Leather Office Bag",
+    "description": "Premium leather office bag designed for professionals.",
+    "price": 130,
+    "rating": 4.7,
+    "image": "images/office-bag.jpg"
+  },
+  {
+    "id": 12,
+    "category": "bags",
+    "title": "Casual Crossbody Sling Bag",
+    "description": "Compact and stylish sling bag perfect for daily use.",
+    "price": 28,
+    "rating": 4.3,
+    "image": "images/sling-bag.jpg"
+  },
+  {
+    "id": 13,
+    "category": "kid",
+    "title": "Kids Cartoon Printed T-Shirt",
+    "description": "Soft and colorful cartoon printed t-shirt for kids.",
+    "price": 15,
+    "rating": 4.4,
+    "image": "images/kids-tshirt.jpg"
+  },
+  {
+    "id": 14,
+    "category": "kid",
+    "title": "Kids School Backpack",
+    "description": "Durable and lightweight school backpack with fun design.",
+    "price": 25,
+    "rating": 4.5,
+    "image": "images/kids-backpack.jpg"
+  },
+  {
+    "id": 15,
+    "category": "kid",
+    "title": "Kids Sports Running Shoes",
+    "description": "Comfortable and flexible sports shoes designed for active kids.",
+    "price": 40,
+    "rating": 4.6,
+    "image": "images/kids-shoes.jpg"
+  },
+  {
+    "id": 16,
+    "category": "women",
+    "title": "Women's Winter Wool Coat",
+    "description": "Premium warm wool coat designed for cold weather.",
+    "price": 110,
+    "rating": 4.8,
+    "image": "images/women-coat.jpg"
+  }
+]
