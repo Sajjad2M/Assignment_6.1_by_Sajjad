@@ -6,24 +6,26 @@
     <title>swiftCart</title>
       <script src="https://cdn.tailwindcss.com"></script>  
     <link rel="stylesheet" href="styles.css">
+ 
 </head>
 <body class="max-w-[425px] lg:max-w-[1440px] h-auto min-w-[320px] lg:min-w-[1024px] mulish lg:mt-10 mt-5 ">
-    <section class="">
+    <section class="w-full">
 
-        <nav class= " flex justify-evenly items-center">
+        <nav class= " flex items-baseline justify-around">
             <div class=""><h1 class="text-xl font-extrabold text-green-500">swiftCart</h1></div>
-            <div class="flex gap-3 items-center justify-between">
-                <a class="" id="home" href="">Home</a>
-                <a class="" id="prod">Products</a>
+            <div class="flex gap-3 items-center justify-between text-[16px] font-bold">
+                <button class="text-green-500" id="home">Home</button>
+                <!-- <h1 class="" id="prod">Products</h1> -->
+                 <button class="" id="prod">Products</button>
                 <h1 class="" id="">About</h1>
                 <h1 class="" id="">Contact</h1>
             </div>
-            <div class="flex items-center">
+            <div class="flex">
                 <img src="Assets/images/twitter black.png" alt="">
             </div>
         </nav>
         <!-- ---------banner -->
-        <section class="bg-[url('Assets/banner-image.png')] w-full h-[550px] mt-10 bg-cover">
+        <section class="bg-[url('Assets/bnner-image.png')] w-full h-[550px] mt-10 bg-cover" id="banner">
             <div class="w-full h-full flex justify-start items-start pl-40 bg-gradient-to-r from-black/80 to-black/30 ">
                 <div class="mt-[280px] ml-10">
                     <h1 class="text-5xl text-white font-black">World's Best Collection For You</h1>
@@ -33,7 +35,7 @@
             </div>
         </section>
         <!-- -------intro -->
-        <main class="bg-neutral-100/50">
+        <main class="bg-neutral-100/50" id="banner2">
              <div class="grid justify-center text-center pt-[45px] bg-neutral-100/50">
             <h1 class="text-3xl text-black/90 font-bold">Why Choose Us</h1>
             <h2 class="mt-2 text-xl font-medium text-gray-500">We give the best shopping experience with to-notch services</h2>
@@ -82,13 +84,70 @@
         </main>
 
           <!-- -----all sixteeen products -->
-           <section class="grid lg:grid-cols-4 gap-6 items-baseline mx-20 p-2" id="allProducts">
+            <h1 class="font-black lg:text-4xl text-center mt-10 hidden" id="product1">Our Products</h1>
+            <!-- <div class="flex gap-3 justify-center mt-10" id="">
+                <button class=" border-[0.01em] border-gray-300 px-4 py-1 text-center text-[16px]  bg-white rounded-[50px] font-semibold allbtn1" id="allbtn1">All</button>
+                <button class=" border-[0.01em] border-gray-300 px-4 py-1 text-center text-[16px]  bg-white rounded-[50px] font-semibold allbtn1" id="allbtn1">All</button>
+              
+            </div> -->
+           <section class=" lg:grid-cols-4 gap-6 items-baseline p-2 lg:mx-24 hidden" id="allProducts">
           
            </section>
-             
-    
+             <!-- home section -->
+              <h1 class="font-black text-4xl lg:ml-14 mt-14" id="trending">Trending Now</h1>
+               <section class=" lg:grid-cols-3 gap-6 items-baseline mx-14 p-2 grid lg:mt-4" id="threeProducts">
+               </section>
 
-
+    <!-- Fooooter -->
+     <section class="bg-gray-800 w-full pt-10 px-20 mt-20 text-white pb-5">
+        <section class="flex justify-between ">
+        <div class="text-[14px] font-medium text-gray-200">
+            <h1 class="text-xl font-extrabold text-green-500">swiftCart</h1>
+            <h1 class="text-[16px] font-bold text-gray-300 mt-4">Lorem ipsum dolor, sit amet consectetur <br>adipisicing elit. Aliquid sit dolor saepe accusantium vita</h1>
+         </div>
+        <div class="grid grid-cols-1 gap-3 text-[14px] font-medium text-gray-200">
+            <h1 class="text-[16px] font-bold text-gray-400">QUICK LINKS</h1>
+            <h1 class="">Home</h1>
+            <h1 class="">Products</h1>
+            <h1 class="">About</h1>
+            <h1 class="">Contact</h1>
+        </div>
+        <div class="grid grid-cols-1 gap-3 text-[14px] font-medium text-gray-200">
+            <h1 class="text-[16px] font-bold text-gray-400">SUPPORT</h1>
+            <h1 class="">Home</h1>
+            <h1 class="">Products</h1>
+            <h1 class="">About</h1>
+            <h1 class="">Contact</h1>
+        </div>
+        <div class="grid grid-cols-1  text-[14px] font-medium text-gray-200" >
+            <h1 class="text-[16px] font-bold text-gray-400">SUBSCRIBE TO OUR NEWS LETTER</h1>
+            <h2 class="">Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit. Nisi, nobis.</h2>
+            <div class="flex gap-4 font-bold text-xl w-full mt-2">
+                <button class="bg-white p-4 text-gray-400  rounded-[12px] w-full">Enter your Email</button>
+                <button class="bg-green-500 p-4  text-white rounded-[12px]">Subscribe</button>
+            </div>
+            <!-- last -->
+        
+        </div>
+        
+        </section>
+     <div class=" mt-5 text-[14px] font-medium text-neutral-gray-200">
+            <hr class="w-full">
+            <div class="flex mt-5 justify-between">
+               <h1 class=""> @ 2026 swiftCart, inc. All rights reserved.</h1>
+               <div class="flex gap-4 ">
+                  <img class="w-6 h-6" src="Assets/images/icons8-facebook-50.png" alt="">
+                <img class="w-6 h-6" src="Assets/images/icons8-linkedin-50.png" alt="">
+                <img class="w-6 h-6" src="Assets/images/icons8-instagram-50.png" alt="">
+              
+                <img class="w-6 h-6 " src="Assets/images/icons8-twitter-50.png" alt="">
+                <img class="w-6 h-6 " src="Assets/images/icons8-mail-24.png" alt="">
+                
+               </div>
+            </div>
+         </div>
+     </section>
+     
 
 
     </section>
