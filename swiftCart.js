@@ -1,3 +1,4 @@
+let fullbody = document.getElementById('fullBody')
 let display1 = document.getElementById('allProducts')
 let display2 = document.getElementById('threeProducts')
 let display3 = document.getElementById('trending')
@@ -24,7 +25,7 @@ let allPosts2 = (api) =>{
     api.forEach(e => {
        
         let div1 = document.createElement('div')
-        div1.innerHTML = `<div class=" bg-white  rounded-[24px] border-[1px] border-b-slate-500/50 shadow-lg">
+        div1.innerHTML = `<div class=" bg-white  rounded-[24px] border-[1px] border-b-slate-500/50 shadow-lg ">
             <div class="px-8" id="">
                 <img src="${e.image}" alt="" class="lg:w-[420px] h-[250px] p-5">
             </div>
@@ -57,7 +58,7 @@ let allPosts2 = (api) =>{
         //<h1 class="p-10 font-bold text-lg absolute pt-1">${e.category}</h1>
         let div5 = document.createElement('div')
         if(e.id === 16 || e.id === 11 || e.id === 9){
-            div5.innerHTML = `<div class=" bg-white  rounded-[24px] border-[1px] border-b-slate-500/50 shadow-lg relative ">
+            div5.innerHTML = `<div class=" bg-white  rounded-[24px] border-[1px] border-b-slate-500/50 shadow-lg relative">
             <div class="px-8" id="">
                 <img src="${e.image}" alt="" class="lg:w-[420px] h-[250px] p-5">
             </div>
@@ -81,12 +82,43 @@ let allPosts2 = (api) =>{
                  <button class="w-full bg-green-500 shadow-lg text-white lg:py-[5px] lg:px-7 lg:rounded-[5px]" id="btn2">Add</button>
              
             </div>
-       
+        <div class="absolute bottom-0 mx-4 mb-[60px] border-[1px] border-red-400 bg-[#74ccf4] rounded-[16px] box-border shadow-2xl ">
+        <div class=" hidden p-5" id="details1"></div>
+        </div>
            </div>
-           
+           </div>
            `
             display2.appendChild(div5)
-            
+            let btn4 = div5.querySelector('#btn1')
+            let div6 = div5.querySelector('#details1')
+             let details2 = document.createElement('div') 
+             let i = 1;
+             let i2 = 0;
+            fullbody.addEventListener('click', ()=>{
+                i2 = i
+                console.log(i2)
+             
+        })
+            btn4.addEventListener('click', () =>{
+                i++
+               details2.innerHTML=''
+              //div6.classList.remove('hidden')
+              if(i % 2 === 0){
+                div6.classList.remove('hidden')
+              }
+              
+              details2.innerHTML = `
+                <h1 class="">Title: ${e.title}</h1>
+                <h1 class="">Description: ${e.description}</h1>
+                <h1 class="">Rating: ${e.title}</h1>
+                <h1 class="">Price: ${e.price}</h1>
+                `
+                 
+                div6.appendChild(details2)
+                //console.log(i)
+                
+             })
+      
         }
        
     
