@@ -70,32 +70,73 @@ let allPosts2 = (api) =>{
         let p = 1
         display1.appendChild(div1)
           all1.addEventListener('click', () =>{
-               div1.classList.remove('hidden')
+            
+            all1.classList.add('text-white', 'bg-green-400')
+                all3.classList.remove('text-white', 'bg-green-400')
+                all4.classList.remove('text-white', 'bg-green-400')
+                all5.classList.remove('text-white', 'bg-green-400')
+                all6.classList.remove('text-white', 'bg-green-400')
+                all2.classList.remove('text-white', 'bg-green-400')
+            div1.classList.remove('hidden')
           })
     
          all2.addEventListener('click', () =>{
+    
              div1.classList.remove('hidden')
+            all2.classList.add('text-white', 'bg-green-400')
+                all1.classList.remove('text-white', 'bg-green-400')
+                all3.classList.remove('text-white', 'bg-green-400')
+                all4.classList.remove('text-white', 'bg-green-400')
+                all5.classList.remove('text-white', 'bg-green-400')
+                all6.classList.remove('text-white', 'bg-green-400')
+                
               if(e.category !== 'men'){
                 div1.classList.add('hidden')
+               
          }})
          all3.addEventListener('click', () =>{
                 div1.classList.remove('hidden')
+               all3.classList.add('text-white', 'bg-green-400')
+                all1.classList.remove('text-white', 'bg-green-400')
+                all2.classList.remove('text-white', 'bg-green-400')
+                all4.classList.remove('text-white', 'bg-green-400')
+                all5.classList.remove('text-white', 'bg-green-400')
+                all6.classList.remove('text-white', 'bg-green-400')
+               
               if(e.category !== 'women'){
                 div1.classList.add('hidden')
          }})
         
          all4.addEventListener('click', () =>{
                 div1.classList.remove('hidden')
+                all4.classList.add('text-white', 'bg-green-400')
+                all1.classList.remove('text-white', 'bg-green-400')
+                all3.classList.remove('text-white', 'bg-green-400')
+                all2.classList.remove('text-white', 'bg-green-400')
+                all5.classList.remove('text-white', 'bg-green-400')
+                all6.classList.remove('text-white', 'bg-green-400')
               if(e.category !== 'kid'){
                 div1.classList.add('hidden')
          }})
          all5.addEventListener('click', () =>{
                 div1.classList.remove('hidden')
+                all5.classList.add('text-white', 'bg-green-400')
+                all1.classList.remove('text-white', 'bg-green-400')
+                all3.classList.remove('text-white', 'bg-green-400')
+                all4.classList.remove('text-white', 'bg-green-400')
+                all2.classList.remove('text-white', 'bg-green-400')
+                all6.classList.remove('text-white', 'bg-green-400')
               if(e.category !== 'jewelry'){
                 div1.classList.add('hidden')
          }})
          all6.addEventListener('click', () =>{
                 div1.classList.remove('hidden')
+                 all6.classList.add('text-white', 'bg-green-400')
+                all1.classList.remove('text-white', 'bg-green-400')
+                all3.classList.remove('text-white', 'bg-green-400')
+                all4.classList.remove('text-white', 'bg-green-400')
+                all5.classList.remove('text-white', 'bg-green-400')
+                all2.classList.remove('text-white', 'bg-green-400')
               if(e.category !== 'bags'){
                 div1.classList.add('hidden')
          }})
@@ -145,7 +186,7 @@ let allPosts2 = (api) =>{
             
             btn4.addEventListener('click', () =>{
                 i++
-               details2.innerHTML=''
+               //details2.innerHTML=''
               //div6.classList.remove('hidden')
               if(i % 2 === 0){
                 div7.classList.remove('hidden')
@@ -178,7 +219,7 @@ let allPosts2 = (api) =>{
         let details3 = document.createElement('div') 
          btn5.addEventListener('click', () =>{
                 v++
-               details3.innerHTML=''
+               //details3.innerHTML=''
               //div6.classList.remove('hidden')
               if(v % 2 === 0){
              
@@ -219,7 +260,7 @@ let allPosts2 = (api) =>{
     }
 
 
-
+    let div10 = display1
     prodbtn.addEventListener('click', () =>{
             banner1.classList.add('hidden')
             banner2.classList.add('hidden')
@@ -233,7 +274,7 @@ let allPosts2 = (api) =>{
             display4.classList.remove('hidden')
             btns.classList.remove('hidden')
             btns.classList.add('flex')
-
+         
 
     homebtn.addEventListener('click', () =>{
              banner1.classList.remove('hidden')
@@ -246,8 +287,11 @@ let allPosts2 = (api) =>{
             display2.classList.remove('hidden')
             display3.classList.remove('hidden')
             display4.classList.add('hidden')
-            btns.classList.remove('hidden')
-            btns.classList.add('flex')
+            btns.classList.add('hidden')
+            btns.classList.remove('flex')
+           
+            
+       
 
 
 
