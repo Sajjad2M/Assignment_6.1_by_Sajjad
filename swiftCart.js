@@ -7,6 +7,13 @@ let homebtn = document.getElementById('home')
 let prodbtn = document.getElementById('prod')
 let banner1 = document.getElementById('banner')
 let banner2 = document.getElementById('banner2')
+let btns = document.getElementById('btnsection')
+let all1 = document.getElementById('allbtn1')
+let all2 = document.getElementById('allbtn2')
+let all3 = document.getElementById('allbtn3')
+let all4 = document.getElementById('allbtn4')
+let all5 = document.getElementById('allbtn5')
+let all6 = document.getElementById('allbtn6')
 //let category1 = document.querySelectorAll('#allbtn1')
 //let btn1 = document.getElementById('btn1')
 
@@ -16,22 +23,21 @@ let allPosts = () => {
     .then(res => res.json())
     .then((data) => allPosts2(data))
 }
-                                                                                                                                                                     
+                                                                                                                                                                  
 let allPosts2 = (api) =>{
-    api.forEach(w =>{
-        
-    }) 
-    //filter [...]
    
+  
     api.forEach(e => {
-        let q = e.category
+        let q = ' '
+        if(e.category === 'kid'){
+            q = e
+        }
         
         
-        // if(q === 'kid'){
-        //   api.filter
-        // }
-    
-        let div1 = document.createElement('div')
+     
+     
+      
+         let div1 = document.createElement('div')
         div1.innerHTML = `<div class=" bg-white  rounded-[24px] border-[1px] border-b-slate-500/50 shadow-lg relative">
             <div class="px-8" id="">
                 <img src="${e.image}" alt="" class="lg:w-[420px] h-[250px] p-5">
@@ -61,7 +67,39 @@ let allPosts2 = (api) =>{
         </div>
            </div>
            `
+        let p = 1
         display1.appendChild(div1)
+          all1.addEventListener('click', () =>{
+               div1.classList.remove('hidden')
+          })
+    
+         all2.addEventListener('click', () =>{
+             div1.classList.remove('hidden')
+              if(e.category !== 'men'){
+                div1.classList.add('hidden')
+         }})
+         all3.addEventListener('click', () =>{
+                div1.classList.remove('hidden')
+              if(e.category !== 'women'){
+                div1.classList.add('hidden')
+         }})
+        
+         all4.addEventListener('click', () =>{
+                div1.classList.remove('hidden')
+              if(e.category !== 'kid'){
+                div1.classList.add('hidden')
+         }})
+         all5.addEventListener('click', () =>{
+                div1.classList.remove('hidden')
+              if(e.category !== 'jewelry'){
+                div1.classList.add('hidden')
+         }})
+         all6.addEventListener('click', () =>{
+                div1.classList.remove('hidden')
+              if(e.category !== 'bags'){
+                div1.classList.add('hidden')
+         }})
+        //
         //let div2 =document.createElement('div')
        
         //<h1 class="p-10 font-bold text-lg absolute pt-1">${e.category}</h1>
@@ -130,9 +168,9 @@ let allPosts2 = (api) =>{
                 //console.log(i)
                 
              })
+             
           
-        }
-       
+        }  
          let btn5 = div1.querySelector('#btn10')
          let div9 = div1.querySelector('#details3')
          let div8 = div1.querySelector('#details4')
@@ -176,7 +214,8 @@ let allPosts2 = (api) =>{
         
        
     });
-     
+    
+    
     }
 
 
@@ -192,6 +231,8 @@ let allPosts2 = (api) =>{
             homebtn.classList.remove('text-green-500')
             display3.classList.add('hidden')
             display4.classList.remove('hidden')
+            btns.classList.remove('hidden')
+            btns.classList.add('flex')
 
 
     homebtn.addEventListener('click', () =>{
@@ -205,10 +246,13 @@ let allPosts2 = (api) =>{
             display2.classList.remove('hidden')
             display3.classList.remove('hidden')
             display4.classList.add('hidden')
+            btns.classList.remove('hidden')
+            btns.classList.add('flex')
+
 
 
     })
-         
+      
         })
  
     
