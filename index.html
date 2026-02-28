@@ -11,9 +11,9 @@
 <body class="max-w-[425px] lg:max-w-[1440px] h-auto min-w-[320px] lg:min-w-[1024px] mulish ">
     <section class="w-full " id="fullBody">
 
-        <nav class= " flex items-center justify-around shadow-md pb-1 shadow-black-100">
-            <div class=""><h1 class="text-2xl font-extrabold text-green-500">swiftCart</h1></div>
-            <div class="flex gap-3 items-center justify-between text-[16px] font-bold">
+        <nav class= " flex items-center justify-around lg:shadow-md shadow-md pb-1 ">
+            <div class=""><h1 class="lg:text-2xl text-[16px] font-bold lg:font-extrabold text-green-500">swiftCart</h1></div>
+            <div class="flex lg:gap-4 gap-2 items-center justify-between lg:text-[24px] text-[12px] lg:font-bold font-bold">
                 <button class="text-green-500" id="home">Home</button>
                 <!-- <h1 class="" id="prod">Products</h1> -->
                  <button class="" id="prod">Products</button>
@@ -21,61 +21,62 @@
                 <h1 class="" id="">Contact</h1>
             </div>
             <div class="flex">
-                <img src="Assets/images/icons8-cart.gif" alt="" class="">
+                <img src="Assets/images/icons8-cart.gif" alt="" class="h-6 w-6 lg:w-7 lg:h-7">
+                <!-- <img src="Assets/images/icons8-hamburger-menu.gif" alt="" class="h-6 w-6 block lg:hidden"> -->
             </div>
         </nav>
         <!-- ---------banner -->
-        <section class="bg-[url('Assets/banner-image.png')] w-full h-[550px] mt-10 bg-cover" id="banner">
-            <div class="w-full h-full flex justify-start items-start pl-40 bg-gradient-to-r from-black/80 to-black/30 ">
-                <div class="mt-[280px] ml-10">
-                    <h1 class="text-5xl text-white font-black">World's Best Collection For You</h1>
-                    <h1 class="mt-3 text-xl font-medium text-white">Discover the latest trends in fashion and many more. Shop with <br> confidence and style at swiftCart</h1>
-                     <button class="bg-green-500 text-white lg:py-[10px] lg:px-7 lg:rounded-[5px] mt-4" id="search2">Shop Now</button>
+        <section class="bg-[url('Assets/images/blackfriday-celebration-marketing.jpg')]  lg:h-[550px] h-[250px] lg:mt-10 mt-4 w-full bg-center bg-cover" id="banner">
+            <div class="w-full h-full flex justify-start items-start lg:pl-40 bg-gradient-to-r from-black/80 to-black/30 ">
+                <div class="lg:mt-[280px] lg:ml-10 ml-12 mt-28">
+                    <h1 class="lg:text-5xl text-white lg:font-black text-lg font-bold">World's Best Collection For You</h1>
+                    <h1 class="lg:mt-3 text-xs lg:text-xl lg:font-medium font-normal text-gray-300">Discover the latest trends in fashion and many more. Shop with <br class="lg:block hidden"> confidence and style at swiftCart</h1>
+                     <button class="bg-green-500 text-white lg:py-[10px] lg:px-7 lg:rounded-[5px] lg:mt-4 mt-2 text-xs lg:text-xl rounded-sm px-2 py-1" id="search2">Shop Now</button>
                 </div>
             </div>
         </section>
         <!-- -------intro -->
         <main class="bg-neutral-100/50" id="banner2">
-             <div class="grid justify-center text-center pt-[45px] bg-neutral-100/50">
-            <h1 class="text-2xl text-black/90 font-bold">Why Choose Us</h1>
-            <h2 class="mt-2 text-xl font-medium text-gray-500">We give the best shopping experience with to-notch services</h2>
+             <div class="grid justify-center text-center lg:pt-[45px] pt-5 bg-neutral-100/50">
+            <h1 class="lg:text-2xl text-black/90 lg:font-bold text-lg font-semibold">Why Choose Us</h1>
+            <h2 class="lg:mt-2 lg:text-xl lg:font-medium text-gray-500 text-[14px] font-normal mt-[2px]">We give the best shopping experience with to-notch services</h2>
          </div>
 
          <!-- 4 cards  -->
-          <section class="bg-neutral-100/50 lg:flex grid lg:justify-center lg:gap-4 lg:p-12 mt-8">
-            <div class="p-8 grid gap-2 bg-white rounded-xl " id="">
+          <section class="bg-neutral-100/50 lg:flex grid lg:justify-center lg:gap-4 gap-6 lg:p-12 py-5 lg:mt-8 mt-3 lg:mx-20 mx-16">
+            <div class="lg:p-8 pt-8 px-4 pb-3 grid lg:gap-2 lg:bg-white bg-white rounded-xl " id="">
               
                 <div class="">
                     <img src="Assets/van.svg" alt="" class="bg-green-300 rounded-xl p-2 mt-[-50px] w-[50px] h-[50px] border-4 border-white shadow-md">
                 </div>
-                <h1 class="text-[18px] font-bold mt-3">Fast Delivery</h1>
+                <h1 class="text-[18px] font-bold lg:mt-3 mt-1">Fast Delivery</h1>
                 <h1 class="text-gray-500 text-[12px] mt-[0px]">Quick and reliable delivery straight to your doorstep. </h1>
             
             </div>
-            <div class="p-8 grid gap-2 bg-white rounded-xl" id="">
+            <div class="lg:p-8 pt-8 px-4 pb-3 grid lg:gap-2 lg:bg-white bg-white rounded-xl " id="">
               
                 <div class="">
                     <img src="Assets/headset.svg" alt="" class="bg-green-300 rounded-xl p-2 text- mt-[-50px] w-[50px] h-[50px] border-4 border-white shadow-md">
                 </div>
-                <h1 class="text-[18px] font-bold mt-3 ">24/7 Delivery</h1>
+                <h1 class="text-[18px] font-bold lg:mt-3 mt-1">24/7 Delivery</h1>
                 <h1 class="text-gray-500 text-[12px] mt-[0px]">Our dedicated support team is available 24/7 to assist you.</h1>
             
             </div> 
-            <div class="p-8 grid gap-2 bg-white rounded-xl" id="">
+            <div class="lg:p-8 pt-8 px-4 pb-3 grid lg:gap-2 lg:bg-white bg-white rounded-xl " id="">
               
                 <div class="">
                     <img src="Assets/shield-check.svg" alt="" class="bg-green-300 rounded-xl p-2 text- mt-[-50px] w-[50px] h-[50px] border-4 border-white shadow-md">
                 </div>
-                <h1 class="text-[18px] font-bold mt-3">Fast Delivery</h1>
+                <h1 class="text-[18px] font-bold lg:mt-3 mt-1" >Secure Delivery</h1>
                  <h1 class="text-gray-500 text-[12px] mt-[0px]">Your payments are protected with trusted security systems.</h1>
             
             </div> 
-            <div class="p-8 grid gap-2 bg-white rounded-xl" id="">
+            <div class="lg:p-8 pt-8 px-4 pb-3 grid lg:gap-2 lg:bg-white bg-white rounded-xl " id="">
               
                 <div class="">
                     <img src="Assets/refresh-ccw.svg" alt="" class="bg-green-300 rounded-xl p-2 text- mt-[-50px] w-[50px] h-[50px] border-4 border-white shadow-md">
                 </div>
-                <h1 class="text-[18px] font-bold mt-3">Fast Delivery</h1>
+                <h1 class="text-[18px] font-bold lg:mt-3 mt-1">Easy Returns</h1>
                 <h1 class="text-gray-500 text-[12px] mt-[0px]">Hassle-free returns within 30 days.</h1>
             
             </div>
@@ -84,8 +85,8 @@
         </main>
 
           <!-- -----all sixteeen products -->
-            <h1 class="font-black lg:text-4xl text-center mt-10 hidden" id="product1">Our Products</h1>
-            <div class="hidden gap-3 justify-center mt-10" id="btnsection">
+            <h1 class="font-black lg:text-4xl text-center lg:mt-10 hidden mt-4" id="product1">Our Products</h1>
+            <div class="hidden gap-3 justify-center lg:mt-10 mt-3" id="btnsection">
                 <button class=" border-[0.5px] rounded-xl shadow-sm px-3 py-1 text-center text-[14px] font-semibold allbtn1 bg-green-400 text-white" id="allbtn1">All</button>
                 <button class=" border-[0.5px] rounded-xl shadow-sm px-3 py-1 text-center text-[14px] font-semibold" id="allbtn2">Men</button>
                 <button class=" border-[0.5px] rounded-xl shadow-sm px-3 py-1 text-center text-[14px] font-semibold" id="allbtn3">Women</button>
@@ -94,17 +95,17 @@
                 <button class=" border-[0.5px] rounded-xl shadow-sm px-3 py-1 text-center text-[14px] font-semibold" id="allbtn6">Bags</button>
               
             </div>
-           <section class=" lg:grid-cols-4 gap-6 items-baseline p-2 lg:mx-24 hidden" id="allProducts">
+           <section class=" lg:grid-cols-4 lg:gap-6 gap-2 lg:items-baseline p-2 lg:mx-24 hidden mx-10 mt-[12px] lg:mt-0" id="allProducts">
           
            </section>
              <!-- home section 3 prods-->
-              <h1 class="font-black text-4xl lg:ml-14 mt-14" id="trending">Trending Now</h1>
-               <section class=" lg:grid-cols-3 gap-6 items-baseline mx-14 p-2 grid lg:mt-4 relative" id="threeProducts">
+              <h1 class="font-black lg:text-4xl lg:ml-14 lg:mt-14 text-xl mt-5 lg:text-start text-center" id="trending">Trending Now!</h1>
+               <section class=" lg:grid-cols-3 lg:gap-6 gap-3 items-baseline lg:mx-14 mx-10 p-2 grid lg:mt-4 relative mt-1" id="threeProducts">
                </section>
 
     <!-- Fooooter -->
-     <section class="bg-gray-800 w-full pt-10 px-20 mt-20 text-white pb-5">
-        <section class="flex justify-between ">
+     <section class="bg-gray-800 w-full pt-10 lg:px-20 lg:mt-20 mt-10 text-white pb-5">
+        <section class="lg:flex grid justify-center items-center lg:justify-between">
         <div class="text-[14px] font-medium text-gray-200">
             <h1 class="text-2xl font-extrabold text-green-500">swiftCart</h1>
             <h1 class="text-[16px] font-bold text-gray-300 mt-4">Lorem ipsum dolor, sit amet consectetur <br>adipisicing elit. Aliquid sit dolor saepe accusantium vita</h1>

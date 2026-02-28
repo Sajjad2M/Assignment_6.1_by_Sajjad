@@ -28,17 +28,8 @@ let allPosts2 = (api) =>{
    
   
     api.forEach(e => {
-        let q = ' '
-        if(e.category === 'kid'){
-            q = e
-        }
-        
-        
-     
-     
-      
          let div1 = document.createElement('div')
-        div1.innerHTML = `<div class=" bg-white  rounded-[24px] border-[1px] border-b-slate-500/50 shadow-lg relative">
+        div1.innerHTML = `<div class=" bg-white  rounded-[24px] border-[1px]  shadow-lg relative">
             <div class="px-8" id="">
                 <img src="${e.image}" alt="" class="lg:w-[420px] h-[250px] p-5">
             </div>
@@ -54,15 +45,15 @@ let allPosts2 = (api) =>{
             <!-- Titleeee -->
             <h1 class="bg-green-100 px-4 font-bold text-[16px] pt-3">${e.title}</h1>
             <!-- Priceeee -->
-            <h1 class="bg-green-100 px-4 font-extrabold text-[20px] pt-0">$${e.price}</h1>
+            <h1 class="bg-green-100 px-4 font-extrabold lg:text-[20px] text-[16px] pt-0">$${e.price}</h1>
             <!-- 2 Buttonss -->
             <div class="flex gap-4 bg-green-100 px-4 pb-4 font-bold text-center pt-4 rounded-b-[24px]" id="">
-                 <button class=" w-full bg-white shadow-lg lg:py-[5px] lg:px-7 lg:rounded-[5px] " id="btn10">Details</button>
+                 <button class=" w-full bg-white shadow-lg lg:py-[5px] lg:px-7 lg:rounded-[5px] rounded-[3px]" id="btn10">Details</button>
 
-                 <button class="w-full bg-green-500 shadow-lg text-white lg:py-[5px] lg:px-7 lg:rounded-[5px]" id="btn2">Add</button>
+                 <button class="w-full bg-green-500 shadow-lg text-white lg:py-[5px] lg:px-7 lg:rounded-[5px] rounded-[3px]" id="btn2">Add</button>
              
             </div>
-            <div class="absolute top-0 h-auto mx-2 mt-[20px] border-t-8  border-green-400 p-4 bg-white rounded-[16px] box-border shadow-2xl bg-opacity-90 hidden" id="details3">
+            <div class="absolute top-0 h-auto mx-2 mt-[20px] border-t-8  border-green-400 lg:p-4 p-3 bg-white rounded-[16px] box-border shadow-2xl bg-opacity-90 hidden " id="details3">
         <div class="" id="details4"></div>
         </div>
            </div>
@@ -145,7 +136,8 @@ let allPosts2 = (api) =>{
        
         //<h1 class="p-10 font-bold text-lg absolute pt-1">${e.category}</h1>
         let div5 = document.createElement('div')
-        if(e.id === 16 || e.id === 11 || e.id === 9){
+        // if(e.id === 16 || e.id === 11 || e.id === 9){
+        if(e.id < 4){
             div5.innerHTML = `<div class=" bg-white  rounded-[24px] border-[1px] border-b-slate-500/50 shadow-lg relative">
             <div class="px-8" id="">
                 <img src="${e.image}" alt="" class="lg:w-[420px] h-[250px] p-5">
@@ -162,16 +154,16 @@ let allPosts2 = (api) =>{
             <!-- Titleeee -->
             <h1 class="bg-green-100 px-4 font-bold text-[16px] pt-3">${e.title}</h1>
             <!-- Priceeee -->
-            <h1 class="bg-green-100 px-4 font-extrabold text-[20px] pt-0">$${e.price}</h1>
+            <h1 class="bg-green-100 px-4 lg:font-extrabold font-bold text-[16px] lg:text-[20px] pt-0">$${e.price}</h1>
             <!-- 2 Buttonss -->
             <div class="flex gap-4 bg-green-100 px-4 pb-4 font-bold text-center pt-4 rounded-b-[24px]" id="">
-                 <button class=" w-full bg-white shadow-lg lg:py-[5px] lg:px-7 lg:rounded-[5px] " id="btn1">Details</button>
+                 <button class=" w-full bg-white shadow-lg lg:py-[5px] lg:px-7 rounded-[5px] " id="btn1">Details</button>
 
-                 <button class="w-full bg-green-500 shadow-lg text-white lg:py-[5px] lg:px-7 lg:rounded-[5px]" id="btn2">Add</button>
+                 <button class="w-full bg-green-500 shadow-lg text-white lg:py-[5px] lg:px-7 lg:rounded-[5px] rounded-[5px]" id="btn2">Add</button>
              
             </div>
-        <div class="absolute top-0 mx-4 mt-[30px] border-l-8 border-green-500 bg-white rounded-[16px] box-border shadow-2xl hidden bg-opacity-90 " id="details2">
-        <div class=" p-5" id="details1"></div>
+        <div class="absolute top-0 mx-4 mt-[30px] lg:border-l-8 border-t-8 lg:border-t-0 border-green-500 bg-white rounded-[16px] box-border shadow-2xl hidden bg-opacity-90 " id="details2">
+        <div class="lg:p-5 p-3" id="details1"></div>
         </div>
            </div>
            </div>
@@ -197,10 +189,10 @@ let allPosts2 = (api) =>{
               }
               
               details2.innerHTML = `
-                <h1 class="text-center text-[22px] font-bold text-green-600 "> ${e.title}</h1>
-                <h1 class="text-left text-[20px] font-semibold mt-2">Description: ${e.description}</h1>
-                <h1 class="text-left text-[20px] font-bold mt-1"><span class="text-[18px] font-bold">Ratings:</span> ${e.rating}</h1>
-                <h1 class="text-left text-[20px] font-bold"><span class="text-[18px] font-bold mt-1 ">Price: </span>$${e.price}</h1>
+                <h1 class="text-center lg:text-[22px] text-[16px] font-bold text-green-600 "> ${e.title}</h1>
+                <h1 class="text-left lg:text-[20px] text-[14px] lg:font-semibold font-normal lg:mt-2 mt-1">Description: ${e.description}</h1>
+                <h1 class="text-left lg:text-[20px] text-[14px] lg:font-bold font-medium mt-1"><span class="lg:text-[18px] text-[14px] lg:font-bold font-bold">Ratings:</span> ${e.rating}</h1>
+                <h1 class="text-left lg:text-[20px] text-[14px] lg:font-bold font-medium"><span class="lg:text-[18px] text-[14px] lg:font-bold font-bold">Price: </span>$${e.price}</h1>
                 `
                  
                 div6.appendChild(details2)
@@ -231,10 +223,10 @@ let allPosts2 = (api) =>{
               }
               
               details3.innerHTML = `
-                <h1 class="text-center text-[20px] font-bold text-green-600 "> ${e.title}</h1>
-                <h1 class="text-left text-[20px] font-semibold mt-2">Description: ${e.description}</h1>
-                <h1 class="text-left text-[20px] font-bold mt-1"><span class="text-[18px] font-bold">Ratings:</span> ${e.rating}</h1>
-                <h1 class="text-left text-[20px] font-bold"><span class="text-[18px] font-bold mt-1 ">Price: </span>$${e.price}</h1>
+                 <h1 class="text-center lg:text-[22px] text-[16px] font-bold text-green-600 "> ${e.title}</h1>
+                <h1 class="text-left lg:text-[20px] text-[14px] lg:font-semibold font-normal lg:mt-2 mt-1">Description: ${e.description}</h1>
+                <h1 class="text-left lg:text-[20px] text-[14px] lg:font-bold font-medium mt-1"><span class="lg:text-[18px] text-[14px] lg:font-bold font-bold">Ratings:</span> ${e.rating}</h1>
+                <h1 class="text-left lg:text-[20px] text-[14px] lg:font-bold font-medium"><span class="lg:text-[18px] text-[14px] lg:font-bold font-bold">Price: </span>$${e.price}</h1>
                 `
                  
                 div9.appendChild(details3)
