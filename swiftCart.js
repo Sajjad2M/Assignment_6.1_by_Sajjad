@@ -14,6 +14,7 @@ let all3 = document.getElementById('allbtn3')
 let all4 = document.getElementById('allbtn4')
 let all5 = document.getElementById('allbtn5')
 let all6 = document.getElementById('allbtn6')
+let spin = document.getElementById('spin')
 //let category1 = document.querySelectorAll('#allbtn1')
 //let btn1 = document.getElementById('btn1')
 
@@ -254,11 +255,12 @@ let allPosts2 = (api) =>{
 
     let div10 = display1
     prodbtn.addEventListener('click', () =>{
+           
             banner1.classList.add('hidden')
             banner2.classList.add('hidden')
-            display1.classList.add('grid')
+            display1.classList.add('hidden')
             display1.classList.add('mt-10')
-            display1.classList.remove('hidden')
+            display1.classList.add('grid')
             display2.classList.add('hidden')
             prodbtn.classList.add('text-green-500')
             homebtn.classList.remove('text-green-500')
@@ -266,7 +268,12 @@ let allPosts2 = (api) =>{
             display4.classList.remove('hidden')
             btns.classList.remove('hidden')
             btns.classList.add('flex')
-         
+            spin.classList.add('flex')
+            spin.classList.remove('hidden')
+          setTimeout(() => {
+                display1.classList.remove('hidden')
+                 spin.classList.add('hidden')
+             }, 2000);
 
     homebtn.addEventListener('click', () =>{
              banner1.classList.remove('hidden')
@@ -294,3 +301,8 @@ let allPosts2 = (api) =>{
     
    
  allPosts();
+//  setTimeout(() => {
+//                 spin.classList.add('hidden')
+//                 mainTop.classList.remove('hidden')
+//                 container.classList.remove('hidden')
+//             }, 2000);
