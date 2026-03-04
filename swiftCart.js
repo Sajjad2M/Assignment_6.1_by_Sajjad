@@ -17,7 +17,7 @@ let all6 = document.getElementById('allbtn6')
 let spin = document.getElementById('spin')
 //let category1 = document.querySelectorAll('#allbtn1')
 //let btn1 = document.getElementById('btn1')
-
+ let d1 = []
 
 let allPosts = () => {
     fetch('https://raw.githubusercontent.com/Sajjad2M/Assignment_6.1_by_Sajjad/refs/heads/main/api.json')
@@ -129,15 +129,16 @@ let allPosts2 = (api) =>{
                 all4.classList.remove('text-white', 'bg-green-400')
                 all5.classList.remove('text-white', 'bg-green-400')
                 all2.classList.remove('text-white', 'bg-green-400')
+               
               if(e.category !== 'bags'){
                 div1.classList.add('hidden')
-         }})
-        //
-        //let div2 =document.createElement('div')
-       
-        //<h1 class="p-10 font-bold text-lg absolute pt-1">${e.category}</h1>
+                 
+         }
+
+        })
+        
         let div5 = document.createElement('div')
-        // if(e.id === 16 || e.id === 11 || e.id === 9){
+      
         if(e.id < 4){
             div5.innerHTML = `<div class=" bg-white  rounded-[24px] border-[1px] border-b-slate-500/50 shadow-lg relative">
             <div class="px-8" id="">
@@ -235,16 +236,6 @@ let allPosts2 = (api) =>{
              console.log(v)
                 
              })
-      
-        
-    //    let btn4 = div5.querySelector('#btn1')
-    //     //  <div class="absolute top-0 bg-red-300 my-10">
-    //     //     <h1>${e.category}</h1>
-    //     //  </div>
-    //    btn4.addEventListener('click', () =>{
-    //     console.log(888)
-
-    //    })
         
        
     });
@@ -288,12 +279,6 @@ let allPosts2 = (api) =>{
             display4.classList.add('hidden')
             btns.classList.add('hidden')
             btns.classList.remove('flex')
-           
-            
-       
-
-
-
     })
       
         })
@@ -301,8 +286,3 @@ let allPosts2 = (api) =>{
     
    
  allPosts();
-//  setTimeout(() => {
-//                 spin.classList.add('hidden')
-//                 mainTop.classList.remove('hidden')
-//                 container.classList.remove('hidden')
-//             }, 2000);
